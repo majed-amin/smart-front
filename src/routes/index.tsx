@@ -175,6 +175,7 @@ const browserHistory = createBrowserHistory()
 const router = new Router({
     routeTree,
     defaultPreload: "intent",
+    basepath: "/smart-front", 
     context: { queryClient },
     history: createHashHistory() // typeof window !== "undefined" ? browserHistory : memoryHistory,
 })
