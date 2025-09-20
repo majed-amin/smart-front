@@ -3,7 +3,7 @@ import { Button } from "primereact/button";
 import { Sidebar } from "primereact/sidebar"; // Drawer component
 import AppLogo from "../assets/images/app-logo.png";
 import {Icon} from "@iconify/react";
-import {useNavigate} from "@tanstack/react-router";
+import {Link, useNavigate} from "@tanstack/react-router";
 
 // Define menu items in an array
 const menuItems = [
@@ -56,12 +56,12 @@ const AppNavbar: React.FC = () => {
                             <ul className="hidden md:flex items-center gap-6 text-gray-700 font-medium">
                                 {menuItems.map((item, index) => (
                                     <li key={index}>
-                                        <a
-                                            href={item.href}
+                                        <Link
+                                            to={item.href}
                                             className="hover:text-primary-600 text-white transition-colors"
                                         >
                                             {item.label}
-                                        </a>
+                                        </Link>
                                     </li>
                                 ))}
                             </ul>
@@ -111,13 +111,13 @@ const AppNavbar: React.FC = () => {
                             <ul className="flex flex-col gap-4 text-gray-700 font-medium">
                                 {menuItems.map((item, index) => (
                                     <li key={index}>
-                                        <a
-                                            href={item.href}
+                                        <Link
+                                            to={item.href}
                                             className="block hover:text-primary-600 transition-colors"
                                             onClick={() => setVisible(false)}
                                         >
                                             {item.label}
-                                        </a>
+                                        </Link>
                                     </li>
                                 ))}
                             </ul>

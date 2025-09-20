@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import NewsletterSubscription from "@/components/NewsletterSubscription";
 import DownloadAppSection from "@/components/DownloadAppSection";
-import { useLocation } from "@tanstack/react-router";
+import {Link, useLocation} from "@tanstack/react-router";
 
 interface FooterProps {
     className?: string;
@@ -60,12 +60,12 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
                 <div className="flex flex-wrap items-center gap-2 text-[#4478C0] text-base md:text-base">
                     {links.map((link, index) => (
                         <React.Fragment key={link.label}>
-                            <a
-                                href={link.href}
+                            <Link
+                                to={link.href}
                                 className="underline underline-offset-4 border-transparent hover:border-[#4478C0] transition-colors"
                             >
                                 {link.label}
-                            </a>
+                            </Link>
                             {index < links.length - 1 && (
                                 <span className="text-[#CFCFCF]">|</span>
                             )}

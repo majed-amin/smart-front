@@ -1,5 +1,6 @@
 import React from "react";
 import {formatBlogDate} from "@/utils/date";
+import {Link} from "@tanstack/react-router";
 
 type ArticleProps = {
     article: ArticleCard
@@ -13,8 +14,8 @@ type ArticleCard = {
 
 const ArticleCard: React.FC<ArticleProps> = ({ article }) => {
     return (
-        <a
-            href="/blog/details"
+        <Link
+            to={"/blog/details"}
             className="block bg-[#F8F9FB] p-6 rounded-[24px] flex flex-col gap-4 hover:shadow-lg transition-shadow max-w-[344px]"
         >
             {/* Image */}
@@ -35,7 +36,7 @@ const ArticleCard: React.FC<ArticleProps> = ({ article }) => {
             <span className="text-[#000000]/60 font-normal text-[13px] leading-[160%] px-2 py-1 rounded">
                 {formatBlogDate(article.date)}
             </span>
-        </a>
+        </Link>
     );
 };
 

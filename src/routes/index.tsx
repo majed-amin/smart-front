@@ -171,12 +171,14 @@ const routeTree = rootRoute.addChildren([
 // Router instance
 const memoryHistory = createMemoryHistory()
 const browserHistory = createBrowserHistory()
+const hashHistory = createHashHistory()
 
 const router = new Router({
     routeTree,
     defaultPreload: "intent",
+    basepath: "/smart-front",
     context: { queryClient },
-    history: createHashHistory() // typeof window !== "undefined" ? browserHistory : memoryHistory,
+    history: hashHistory // typeof window !== "undefined" ? browserHistory : memoryHistory,
 })
 
 // Register for TS
