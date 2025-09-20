@@ -1,0 +1,21 @@
+// After generating the API, you can enhance it with custom endpoints
+import { generatedApi } from './api/generatedApi';
+
+export const enhancedApi = generatedApi.injectEndpoints({
+  endpoints: (builder) => ({
+    uploadFile: builder.mutation({
+      query: (file) => ({
+        url: '/upload',
+        method: 'POST',
+        body: (() => {
+          const formData = new FormData();
+          formData.append('file', file);
+          return formData;
+        })(),
+      }),
+    }),
+  }),
+  overrideExisting: false,
+});
+
+export const { useUploadFileMutation } = enhancedApi;

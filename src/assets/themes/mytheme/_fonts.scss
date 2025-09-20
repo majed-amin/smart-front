@@ -1,0 +1,147 @@
+// Configuration for the font-face of the theme, defaults to the system font so left as blank
+@font-face {
+  font-family: "ExpoArabic";
+  src: url("/fonts/ExpoArabic/ExpoArabic-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-display: swap
+}
+@font-face {
+  font-family: "ExpoArabic";
+  src: url("/fonts/ExpoArabic/ExpoArabic-Book.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap
+}
+
+//@font-face {
+//  font-family: "ExpoArabic";
+//  src: url("/fonts/ExpoArabic/ExpoArabic-Book.ttf") format("truetype");
+//  font-weight: 700;
+//  font-display: swap
+//}
+
+@font-face {
+  font-family: "ExpoArabic";
+  src: url("/fonts/ExpoArabic/ExpoArabic-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap
+}
+
+@font-face {
+  font-family: "ExpoArabic";
+  src: url("/fonts/ExpoArabic/ExpoArabic-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap
+}
+
+@font-face {
+  font-family: "ExpoArabic";
+  src: url("/fonts/ExpoArabic/ExpoArabic-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap
+}
+
+@font-face {
+  font-family: "ExpoArabic";
+  src: url("/fonts/ExpoArabic/ExpoArabic-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap
+}
+
+/* Lama Sans Thin */
+@font-face {
+  font-family: 'Lama Sans';
+  src: url('/fonts/LamaSans/LamaSans-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap
+}
+
+/* Lama Sans Thin Italic */
+@font-face {
+  font-family: 'Lama Sans';
+  src: url('/fonts/LamaSans/LamaSans-ThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap
+}
+
+/* Lama Sans Light */
+@font-face {
+  font-family: 'Lama Sans';
+  src: url('/fonts/LamaSans/LamaSans-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap
+}
+
+/* Lama Sans Light Italic */
+@font-face {
+  font-family: 'Lama Sans';
+  src: url('/fonts/LamaSans/LamaSans-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap
+}
+
+/* Lama Sans Regular */
+@font-face {
+  font-family: 'Lama Sans';
+  src: url('/fonts/LamaSans/LamaSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap
+}
+
+/* Lama Sans Medium */
+@font-face {
+  font-family: 'Lama Sans';
+  src: url('/fonts/LamaSans/LamaSans-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap
+}
+
+/* Lama Sans Medium Italic */
+@font-face {
+  font-family: 'Lama Sans';
+  src: url('/fonts/LamaSans/LamaSans-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap
+}
+
+/* Lama Sans Bold */
+@font-face {
+  font-family: 'Lama Sans';
+  src: url('/fonts/LamaSans/LamaSans-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap
+}
+
+/* Lama Sans Bold Italic */
+@font-face {
+  font-family: 'Lama Sans';
+  src: url('/fonts/LamaSans/LamaSans-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap
+}
+
+/* Lama Sans Black */
+@font-face {
+  font-family: 'Lama Sans';
+  src: url('/fonts/LamaSans/LamaSans-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap
+}
+
+/* Lama Sans Black Italic */
+@font-face {
+  font-family: 'Lama Sans';
+  src: url('/fonts/LamaSans/LamaSans-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap
+}
