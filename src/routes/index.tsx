@@ -3,7 +3,7 @@ import {
     createRoute,
     Router,
     RouterProvider,
-    createHashHistory
+    createHashHistory,
     createBrowserHistory,
     createMemoryHistory, Outlet,
 } from "@tanstack/react-router"
