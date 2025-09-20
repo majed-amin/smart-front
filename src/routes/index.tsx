@@ -175,7 +175,7 @@ const router = new Router({
     routeTree,
     defaultPreload: "intent",
     context: { queryClient },
-    history: typeof window !== "undefined" ? browserHistory : memoryHistory,
+    history: createHashHistory() // typeof window !== "undefined" ? browserHistory : memoryHistory,
 })
 
 // Register for TS
