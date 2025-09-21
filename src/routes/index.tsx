@@ -175,6 +175,8 @@ const hashHistory = createHashHistory()
 
 const router = new Router({
     routeTree,
+    scrollRestoration: true,
+    scrollRestorationBehavior: "smooth",
     defaultPreload: "intent",
     basepath: "/smart-front",
     context: { queryClient },
