@@ -315,7 +315,7 @@ export default function Home() {
                             </div>
 
                             <button className="w-full flex justify-center md:justify-between bg-[#125298] px-[20px] cursor-pointer py-[15px] text-white rounded-xl">
-                                <span className="text-base leading-[160%] ">عرض جميع الدروس</span>
+                                <span className="text-sm md:text-base leading-[160%] ">عرض جميع الدروس</span>
 
                                 <Icon
                                     icon="solar:arrow-left-linear"
