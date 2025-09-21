@@ -40,11 +40,11 @@ const FAQSection: React.FC = () => {
     return (
         <section className="faq-section py-16 px-6 md:px-24 bg-[#F8F9FB] rounded-3xl">
             <div className="text-center mb-10">
-                <span className="text-lg leading-[140%] text-black">أسئلة شائعة</span>
-                <h2 className="text-[32px] font-semibold mb-2">
+                <span className="text-[13px] md:text-lg leading-[140%] text-black">أسئلة شائعة</span>
+                <h2 className="text-base md:text-[32px] font-bold mb-2">
                     تعرف على المزيد حول <span className="text-[#E79C1C]">سمارت</span>
                 </h2>
-                <p className="text-lg text-[#1F1F1F]/65 leading-[180%]">
+                <p className="text-sm md:text-lg text-[#1F1F1F]/65 leading-[180%]">
                     هنا تجد الإجابات لأكثر الأسئلة تكرارًا حول نظام سمارت.
                 </p>
             </div>
@@ -85,14 +85,14 @@ const FAQSection: React.FC = () => {
                                     {/*    height={24}*/}
                                     {/*/>*/}
                                     <span
-                                        className={`ml-auto font-medium ${index === activeIndex ? "text-[#5F92DC]" : "text-black"}`}
+                                        className={`ml-auto font-medium text-base md:text-[20px] ${index === activeIndex ? "text-[#5F92DC]" : "text-black"}`}
                                     >
                                         {faq.question}
                                     </span>
                                 </div>
                             )}
                         >
-                            {faq.answer}
+                            <span className={`text-sm md:text-base`}>{faq.answer}</span>
                         </AccordionTab>
                     ))}
                 </Accordion>

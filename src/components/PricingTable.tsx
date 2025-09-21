@@ -167,9 +167,9 @@ const PricingSection: React.FC<PricingSectionProps> = ({plans}) => {
             <Dialog
                 header={
                     <div className="flex justify-center items-center w-full relative">
-                        <div className="flex flex-col">
-                            <h2 className="text-[32px] leading-[150%] text-black font-bold text-center">إعداد القيود (اختياري)</h2>
-                            <span className="text-lg font-medium leading-[180%] text-[#1F1F1F]/65">يمكنك الآن تخصيص القيود على  الباقة التي اخترتها حسب الحاجة</span>
+                        <div className="flex flex-col text-center">
+                            <h2 className="text-lg md:text-[32px] leading-[150%] text-black font-bold text-center">إعداد القيود (اختياري)</h2>
+                            <span className="text-sm md:text-lg font-medium leading-[180%] text-[#1F1F1F]/65">يمكنك الآن تخصيص القيود على  الباقة التي اخترتها حسب الحاجة</span>
                         </div>
                         <button
                             className="absolute right-2 top-0 text-gray-400 hover:text-gray-600"
@@ -180,13 +180,13 @@ const PricingSection: React.FC<PricingSectionProps> = ({plans}) => {
                     </div>
                 }
                 visible={!!selectedPlan}
-                style={{ width: "100%", margin: "20px" }}
+                style={{ width: "100%", margin: "10px" }}
                 modal
                 closable={false}
                 onHide={() => setModalVisible(false)}
-                className="custom-subscription-modal"
+                className="custom-subscription-modal !px-[2px]"
             >
-                <div className="space-y-6 p-4">
+                <div className="">
                     {/* Options as Cards */}
                     <div className="flex flex-col md:flex-row flex-wrap gap-4">
                         {(
@@ -202,17 +202,17 @@ const PricingSection: React.FC<PricingSectionProps> = ({plans}) => {
                         ).map((item) => (
                             <div
                                 key={item.key}
-                                className="bg-[#F8F9FB] rounded-xl p-6 flex flex-col w-[415px] justify-between"
+                                className="bg-[#F8F9FB] rounded-xl p-2 flex flex-col w-[370px] md:w-[415px] justify-between"
                             >
                                 <div className={"mb-3"}>
                                     <div className={"w-fit mb-3 flex items-center justify-center bg-[#125298] rounded-xl p-3.5"}>
                                         <Icon icon="solar:user-bold-duotone" color={"white"} width="24" height="24" />
                                     </div>
                                     <div>
-                                        <h4 className="text-[20px] font-medium mb-1">
+                                        <h4 className="text-base md:text-[20px] font-medium mb-1">
                                             {item.label}
                                         </h4>
-                                        <p className="text-[15px] text-[#76777A] mb-4">
+                                        <p className="text-sm text-[#76777A] mb-4">
                                             {descriptions[item.key]}
                                         </p>
                                     </div>
@@ -257,9 +257,9 @@ const PricingSection: React.FC<PricingSectionProps> = ({plans}) => {
                     <div className="flex flex-col md:flex-row gap-4 mt-6">
                         <div
                             onClick={() => handleProceed(true)}
-                            className="cursor-pointer bg-[#125298] text-white px-6 py-10 rounded-2xl text-center transition"
+                            className="cursor-pointer flex flex-col items-center bg-[#125298] text-white md:px-6 py-10 rounded-2xl text-center transition"
                         >
-                            <h5 className="text-lg font-medium leading-[32px] mb-[52px] w-[367px]">يمكنك تخطي هذه الخطوة اذا كانت لا تحتاج الى اين من هذه القيود</h5>
+                            <h5 className="text-base md:text-lg font-medium leading-[32px] mb-[52px] max-w-[322px] md:max-w-[367px]">يمكنك تخطي هذه الخطوة اذا كانت لا تحتاج الى اين من هذه القيود</h5>
                             <Button label={"تخطي"} className="text-sm !px-[50px] !border-0 !py-[15px] !bg-white !text-[#125298] rounded-xl" />
                         </div>
 
@@ -285,7 +285,7 @@ const PricingSection: React.FC<PricingSectionProps> = ({plans}) => {
 
                             {/*<h5 className="text-lg font-semibold mb-2">الانتقال إلى الدفع</h5>*/}
                             <div className={"flex flex-row gap-2 items-center justify-center"}>
-                                <Button label={"الانتقال الى الدفع"} onClick={() => handleProceed(false)} className="text-sm flex-1 !border-0 !py-[15px] !bg-white !text-[#125298] rounded-xl" />
+                                <Button label={"الانتقال الى الدفع"} onClick={() => handleProceed(false)} className="text-xs md:text-sm flex-1 !border-0 !py-[15px] !bg-white !text-[#125298] rounded-xl" />
                                 <Button label={"تخطي"} onClick={() => handleProceed(true)} className="text-sm flex-1 !border-0 !py-[15px] !bg-transparent !text-white rounded-xl" />
                             </div>
                         </div>

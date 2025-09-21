@@ -26,7 +26,7 @@ export default function PricingCard({ plan, billing, inheritedName, onSubscribe 
 
 
     return (
-        <div className={`bg-[#2C91FF]/20 border-1 border-[#9AA6FF]/30 w-[379px] rounded-2xl ${plan.popular ? "p-2" : "p-8"}`}>
+        <div className={`bg-[#2C91FF]/20 border-1 border-[#9AA6FF]/30 w-[354px] md:w-[379px] rounded-2xl ${plan.popular ? "p-2" : "p-8"}`}>
             {plan.popular && (
                 <span
                     className="inline-block w-full text-white text-base text-center px-3 py-1 rounded-full mb-4">
@@ -51,7 +51,7 @@ export default function PricingCard({ plan, billing, inheritedName, onSubscribe 
                 <ul className="text-gray-600 flex-1 space-y-2 mb-6">
                     <ul className="flex flex-col gap-5">
                         {inheritedName && (
-                            <li className="font-medium text-[#7BADF9]">
+                            <li className="font-medium text-sm md:text-base text-[#7BADF9]">
                                 جميع مميزات الباقة {inheritedName} بالإضافة إلى:
                             </li>
                         )}

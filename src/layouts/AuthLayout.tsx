@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 export default function AuthLayout() {
 
     const location = useLocation();
-    const isRegisterRoute = location.pathname === "/auth/register";
+    const isRegisterRoute = location.pathname === "/smart-front/auth/register";
     const navigation = useNavigate({ from: isRegisterRoute ? "/auth/register" : "/auth/login" });
 
     function handleGoToHome() {
@@ -56,10 +56,7 @@ export default function AuthLayout() {
 
                 {/* Slider */}
                 {isRegisterRoute ?
-                    <motion.div initial={{ right: 0, opacity: 0 }}
-                                whileInView={{ right: "100px", opacity: 1 }}
-                                viewport={{ once: true, amount: 0.3 }} // once = true => one time only
-                                transition={{ duration: 0.6, ease: "easeOut" }} className="absolute inset-0 z-20 flex flex-col md:text-start text-center justify-center items-center
+                    <div className="absolute inset-0 z-20 flex flex-col md:text-start text-center justify-center items-center
                          md:justify-start md:items-start md:top-30 md:right-[100px]">
                         <h1 className={`max-w-[441px] text-white text-[20px] md:text-[32px] font-bold leading-[160%]`}>
                             ابدأ تجربتك المجانية لمدة 14 يوم مع  <span className={`text-[#E79C1C]`}>نظام سمارت</span>
@@ -72,18 +69,14 @@ export default function AuthLayout() {
                             <li className={"relative ps-8 before:content-['✓'] before:absolute before:start-0 before:top-0 before:ms-2 text-white"}>المميزات</li>
                             <li className={"relative ps-8 before:content-['✓'] before:absolute before:start-0 before:top-0 before:ms-2 text-white"}>المميزات</li>
                         </ul>
-                    </motion.div>
+                    </div>
                     :
-                    <motion.div
-                        initial={{ right: 0, opacity: 0 }}
-                        whileInView={{ right: "177px", opacity: 1 }}
-                        viewport={{ once: true, amount: 0.3 }} // once = true => one time only
-                        transition={{ duration: 0.6, ease: "easeOut" }}
+                    <div
                         className="absolute inset-0 z-20 flex justify-center items-center
                     md:justify-start md:items-start md:top-30 md:right-[177px]"
                     >
                         <StringSlider />
-                    </motion.div>
+                    </div>
                 }
 
                 {/* Shadow overlay */}

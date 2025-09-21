@@ -91,10 +91,7 @@ export default function StringSlider() {
                             width: i === index ? 64 : 10,
                             height: 10,
                             opacity: i === index ? 1 : 0.6,
-                            boxShadow:
-                                i === index
-                                    ? "0px 0px 12px rgba(255,255,255,0.8)"
-                                    : "none",
+
                         }}
                         transition={{
                             type: "spring",

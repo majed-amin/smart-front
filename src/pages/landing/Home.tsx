@@ -149,23 +149,23 @@ export default function Home() {
                             viewport={{ once: true, amount: 0.3 }} // once = true => one time only
                             transition={{ duration: 0.6, ease: "easeOut" }} className="container mx-auto px-10 mt-20">
                     <div className="text-white font-bold flex flex-col justify-center items-center">
-                        <h1 className="text-transparent text-[26px] md:text-5xl leading-[160%] bg-clip-text bg-[linear-gradient(176deg,#ECECEC_20.35%,rgba(236,236,236,0)_128.73%)]">سمارت
+                        <h1 className="text-transparent text-[24px] md:text-5xl leading-[148%] md:leading-[160%] bg-clip-text bg-[linear-gradient(176deg,#ECECEC_20.35%,rgba(236,236,236,0)_128.73%)]">سمارت
                             | نظام محاسبي ذكي</h1>
-                        <h1 className="flex mt-3 text-xl md:text-5xl leading-[160%] text-transparent bg-clip-text bg-[linear-gradient(176deg,#ECECEC_20.35%,rgba(236,236,236,0)_128.73%)]">لإدارة
-                            أعمالك بثقة وبطريقة أكثر {" "} <RotatingText
-                                texts={words}
-                                mainClassName="px-2 sm:px-2 md:px-3 text-[#E79C1C] overflow-hidden justify-center rounded-lg"
-                                staggerFrom={"last"}
-                                initial={{y: "100%"}}
-                                animate={{y: 0}}
-                                exit={{y: "-120%"}}
-                                staggerDuration={0.025}
-                                splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
-                                transition={{type: "spring", damping: 30, stiffness: 400}}
-                                rotationInterval={3000}
-                            /></h1>
+                        <h1 className="flex items-center mt-3 text-[18px] md:text-5xl leading-[160%] text-transparent bg-clip-text bg-[linear-gradient(176deg,#ECECEC_20.35%,rgba(236,236,236,0)_128.73%)]">لإدارة
+                            أعمالك بثقة وبطريقة أكثر   </h1> <RotatingText
+                        texts={words}
+                        mainClassName="px-2 sm:px-2 md:px-3 text-[#E79C1C] overflow-hidden justify-center rounded-lg"
+                        staggerFrom={"last"}
+                        initial={{y: "100%"}}
+                        animate={{y: 0}}
+                        exit={{y: "-120%"}}
+                        staggerDuration={0.025}
+                        splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+                        transition={{type: "spring", damping: 30, stiffness: 400}}
+                        rotationInterval={3000}
+                    />
 
-                        <p className="text-[#ECECEC]/65 text-[20px] font-normal max-w-[826px] leading-[160%] text-center mt-10">سواء
+                        <p className="text-[#ECECEC]/65 text-base md:text-[20px] font-normal max-w-[826px] leading-[160%] text-center mt-10">سواء
                             كنت صاحب شركة صغيرة أو مشروع تجاري ناشئ، سمارت يجمع لك كل أدوات المحاسبة في مكان واحد: فواتير،
                             مصروفات، رواتب، تقارير، وأرشفة—all سهل، سريع، وآمن</p>
 
@@ -173,12 +173,12 @@ export default function Home() {
                             <Button
                                 onClick={handleGoToLogin}
                                 label="اشترك الآن"
-                                className="!bg-[#125298] text-white !border-1 !border-[#5F92DC] !py-3 !px-6"
+                                className="!bg-[#125298] !text-sm  text-white !border-1 !border-[#5F92DC] !py-3 !px-6"
                             />
                             <Button
                                 onClick={handleGoToRegister}
                                 label="ابدأ مجانا الآن"
-                                className="!bg-white !py-3 !px-6 !text-[#125298] shadow-[0px_2px_21px_0px_#A7C8FF3D]"
+                                className="!bg-white  !text-sm !py-3 !px-6 !text-[#125298] shadow-[0px_2px_21px_0px_#A7C8FF3D]"
                             />
                         </div>
                     </div>
@@ -189,7 +189,7 @@ export default function Home() {
                      viewport={{ once: true, amount: 0.3 }} // once = true => one time only
                      transition={{ duration: 0.6, ease: "easeOut" }} className="relative flex flex-col items-center justify-center mx-auto max-w-[1476px] text-center mt-10 pb-10">
                     {/* Original Image */}
-                    <img src={ProductShowcase} alt="Original" className="z-2 block"/>
+                    <img src={ProductShowcase} alt="Original" className="z-2 block w-[352.51513671875px] md:-[1472.393798828125px]"/>
 
                     {/* Reflected Image */}
                     <div className="absolute top-90 z-1 mask-b-from-90% px-5 mask-l-from-95% mask-r-from-95%">
@@ -208,45 +208,45 @@ export default function Home() {
                                 whileInView={{ scale: 1, opacity: 1 }}
                                 viewport={{ once: true, amount: 0.3 }} // once = true => one time only
                                 transition={{ duration: 0.6, ease: "easeOut" }} className="flex flex-col gap-8 z-3 items-center justify-center mt-10">
-                        <h1 className="text-[2rem] text-white font-semibold">أكثر من  <span className="text-[#E79C1C]">1000</span>  عميل يثقون في سمارت يوميًا</h1>
-                        <div className="flex flex-row items-center justify-center gap-10 max-w-[1308px] flex-wrap">
-                            <div className="w-24 flex items-center justify-center">
+                        <h1 className="text-base md:text-[2rem] text-white font-semibold">أكثر من  <span className="text-[#E79C1C]">1000</span>  عميل يثقون في سمارت يوميًا</h1>
+                        <div className="flex flex-row items-center justify-center gap-10 max-w-[333.37115478515625px] md:max-w-[1308px] flex-wrap">
+                            <div className="w-[36px] h-[18.84375px] md:w-24 flex items-center justify-center">
                                 {/*<Icon className="w-full h-full object-contain" />*/}
                                 <img src={FinExtraIcon} className="w-full h-full object-contain" />
                             </div>
-                            <div className="w-24 flex items-center justify-center">
+                            <div className="w-[36px] h-[18.84375px] md:w-24 flex items-center justify-center">
                                 {/*<Icon className="w-full h-full object-contain" />*/}
                                 <img src={CfoIcon} className="w-full h-full object-contain" />
                             </div>
-                            <div className="w-24 flex items-center justify-center">
+                            <div className="w-[36px] h-[18.84375px] md:w-24 flex items-center justify-center">
                                 {/*<Icon className="w-full h-full object-contain" />*/}
                                 <img src={FintechNexusIcon} className="w-full h-full object-contain" />
                             </div>
-                            <div className="w-24 flex items-center justify-center">
+                            <div className="w-[36px] h-[18.84375px] md:w-24 flex items-center justify-center">
                                 {/*<Icon className="w-full h-full object-contain" />*/}
                                 <img src={FinExtraIcon} className="w-full h-full object-contain" />
                             </div>
-                            <div className="w-24 flex items-center justify-center">
+                            <div className="w-[36px] h-[18.84375px] md:w-24 flex items-center justify-center">
                                 {/*<Icon className="w-full h-full object-contain" />*/}
                                 <img src={ForbesIcon} className="w-full h-full object-contain" />
                             </div>
-                            <div className="w-24 flex items-center justify-center">
+                            <div className="w-[36px] h-[18.84375px] md:w-24 flex items-center justify-center">
                                 {/*<Icon className="w-full h-full object-contain" />*/}
                                 <img src={PaymentsDiveIcon} className="w-full h-full object-contain" />
                             </div>
-                            <div className="w-24 flex items-center justify-center">
+                            <div className="w-[36px] h-[18.84375px] md:w-24 flex items-center justify-center">
                                 {/*<Icon className="w-full h-full object-contain" />*/}
                                 <img src={TcIcon} className="w-full h-full object-contain" />
                             </div>
-                            <div className="w-24 flex items-center justify-center">
+                            <div className="w-[36px] h-[18.84375px] md:w-24 flex items-center justify-center">
                                 {/*<Icon className="w-full h-full object-contain" />*/}
                                 <img src={PaymentsDiveIcon} className="w-full h-full object-contain" />
                             </div>
-                            <div className="w-24 flex items-center justify-center">
+                            <div className="w-[36px] h-[18.84375px] md:w-24 flex items-center justify-center">
                                 {/*<Icon className="w-full h-full object-contain" />*/}
                                 <img src={FinExtraIcon} className="w-full h-full object-contain" />
                             </div>
-                            <div className="w-24 flex items-center justify-center">
+                            <div className="w-[36px] h-[18.84375px] md:w-24 flex items-center justify-center">
                                 {/*<Icon className="w-full h-full object-contain" />*/}
                                 <img src={PaymentsDiveIcon} className="w-full h-full object-contain" />
                             </div>

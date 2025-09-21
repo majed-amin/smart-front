@@ -26,9 +26,9 @@ const AppNavbar: React.FC = () => {
     }
 
     return (
-        <div className="relative flex flex-col items-center">
-            <header className="container md:mx-auto md:max-w-[1607px] bg-[#00264E]/60 fixed top-3.5 py-8 backdrop-blur-lg z-50 rounded-3xl">
-                <div className="px-6 py-3 flex items-center justify-between">
+        <div className="relative flex flex-col items-center px-3">
+            <header className="container md:mx-auto md:max-w-[1607px] bg-[#00264E]/60 fixed top-3.5 md:py-8 backdrop-blur-lg z-50 rounded-[12px] md:rounded-3xl">
+                <div className="p-[12px] md:px-6 md:py-3 flex items-center justify-between">
                     {/* Mobile Hamburger */}
                     <div className="md:hidden order-1 md:order-2">
                         <Button
@@ -36,18 +36,18 @@ const AppNavbar: React.FC = () => {
                             className="!bg-[#ECF1FF]/10 rounded-[8px] !p-[8px]"
                             onClick={() => setVisible(true)}
                         >
-                            <Icon icon="solar:hamburger-menu-line-duotone" color={`#FFFFFF`} width="40" height="40" />
+                            <Icon icon="solar:hamburger-menu-line-duotone" color={`#FFFFFF`} className={`md:w-[40px] md:h-[40px] w-[38px] h-[36px]`} />
                         </Button>
                     </div>
 
                     {/* Logo + Navigation */}
-                    <div className="order-2 md:order-0 flex items-center gap-6">
+                    <div className="order-2 md:order-0 md:flex items-center gap-6">
                         {/* App Icon */}
-                        <div className="flex items-center me-8">
+                        <div className="flex items-center md:me-8">
                             <img
                                 src={AppLogo}
                                 alt="App Logo"
-                                className="w-[90px] md:w-[142px] object-contain"
+                                className="w-[94px] md:w-[142px] object-contain"
                             />
                         </div>
 
