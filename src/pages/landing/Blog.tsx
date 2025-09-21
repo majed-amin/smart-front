@@ -127,7 +127,7 @@ export default function Blog() {
                 </div>
 
                 <div
-                    className="overflow-x-auto snap-x scroll-ms-6 justify-start scrollbar-hidden flex flex-nowrap gap-5 mt-14"
+                    className="overflow-x-auto snap-x scroll-ms-6 scrollbar-hidden flex md:justify-center justify-start flex-nowrap gap-5 mt-14"
                 >
                     {featuredArticles.map((article, idx) => (
                         <div key={`art-${idx}`} className="flex-shrink-0">
