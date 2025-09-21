@@ -29,8 +29,8 @@ const TutorialCard: React.FC<TutorialCardProps> = ({ tutorial }) => {
 
             {/* Title & Description */}
             <div className="transition-transform duration-500 group-hover:translate-y-1">
-                <h3 className="text-xl font-semibold mb-2">{tutorial.title}</h3>
-                <p className="text-gray-700 text-base">{tutorial.description}</p>
+                <h3 className="text-base md:text-xl font-semibold mb-2">{tutorial.title}</h3>
+                <p className="text-xs md:text-base text-gray-700">{tutorial.description}</p>
             </div>
         </div>
     );
