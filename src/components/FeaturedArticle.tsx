@@ -15,7 +15,7 @@ type Article = {
 const FeaturedArticle: React.FC<FeaturedArticleProps> = ({ article }) => {
     return (
         <>
-            <div className={`snap-start max-w-[261px] md:max-w-[540px] min-w-[261px] md:min-w-[540px] bg-[#2C91FF]/10 border-1 border-[#9AA6FF]/30 rounded-2xl p-5 flex flex-col md:flex-row gap-5 items-center shadow-[0px_2px_12px_0px_#14142B14] backdrop-blur-[19px]`}>
+            <div className={`snap-start scroll-me-6 max-w-[261px] md:max-w-[540px] min-w-[261px] md:min-w-[540px] bg-[#2C91FF]/10 border-1 border-[#9AA6FF]/30 rounded-2xl p-5 flex flex-col md:flex-row gap-5 items-center shadow-[0px_2px_12px_0px_#14142B14] backdrop-blur-[19px]`}>
                 <div className={`w-full md:w-[168px] md:h-[126px]`}>
                     <img src={article.image} alt="DEMO" className={`rounded-xl w-full h-full object-cover`}/>
                 </div>
