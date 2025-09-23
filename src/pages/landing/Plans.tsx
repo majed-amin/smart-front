@@ -1,7 +1,7 @@
 import ComplianceLogo from "@/assets/images/compliance-logo.png";
 import BigBackgroundGradient from "@/assets/images/big-background-gradient.png";
-import PricingTable from "@/components/PricingTable";
-import FAQSection from "@/components/FAQSection";
+import PricingTable from "./components/PricingTable";
+import FAQSection from "./components/FAQSection";
 
 const plans = [
     { key: "basic", name: "أساسية", monthlyPrice: 29, yearlyPrice: 290, features: ["ميزة 1", "ميزة 2", "ميزة 3"] },

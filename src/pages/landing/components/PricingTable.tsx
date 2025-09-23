@@ -1,8 +1,6 @@
 import React, {useEffect, useRef, useState} from "react";
 import {motion} from "framer-motion";
-import PricingCard from "@/components/PricingCard";
-import PricingComparisonSection from "@/components/PricingComparisonSection";
-import cn from "classnames";
+import PricingCard from "./PricingCard";
 import FinancialValue from "@/components/common/FinancialValue";
 import {Dialog} from "primereact/dialog";
 import {Icon} from "@iconify/react";

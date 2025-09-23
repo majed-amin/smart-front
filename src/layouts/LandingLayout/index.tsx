@@ -1,7 +1,7 @@
 // layouts/LandingLayout.tsx
 import { Outlet, Link } from "@tanstack/react-router"
-import AppNavbar from "@/components/AppNavbar";
-import Footer from "@/components/Footer";
+import AppNavbar from "./components/AppNavbar";
+import Footer from "./components/Footer";
 
 export default function LandingLayout() {
     return (

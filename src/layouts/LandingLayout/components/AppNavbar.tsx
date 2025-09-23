@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button } from "primereact/button";
 import { Sidebar } from "primereact/sidebar"; // Drawer component
-import AppLogo from "../assets/images/app-logo.png";
+import AppLogo from "@/assets/images/app-logo.png";
 import {Icon} from "@iconify/react";
 import {Link, useNavigate} from "@tanstack/react-router";
 

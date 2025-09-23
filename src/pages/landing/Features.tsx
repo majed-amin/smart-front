@@ -2,7 +2,7 @@ import {Button} from "primereact/button";
 import React from "react";
 import BigBackgroundGradient from "@/assets/images/big-background-gradient.png";
 import {Icon} from "@iconify/react";
-import FeatureItem from "@/components/FeatureItem";
+import FeatureItem from "./components/FeatureItem";
 
 const features = [
     {

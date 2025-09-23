@@ -3,7 +3,7 @@ import AuthCover from "@/assets/images/desktop-mockup.png";
 import AuthCoverRegister from "@/assets/images/desktop-mockup-2.png";
 import xlBackgroundGradient from "@/assets/images/2xl-background-gradient.png";
 import SmartLogo from "@/assets/images/app-logo-dark.png";
-import StringSlider from "@/components/StringSlider";
+import StringSlider from "./components/StringSlider";
 import { motion } from "framer-motion";
 
 export default function AuthLayout() {

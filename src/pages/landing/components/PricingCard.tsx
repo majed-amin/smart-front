@@ -1,4 +1,4 @@
-import FinancialValue from "./common/FinancialValue";
+import FinancialValue from "@/components/common/FinancialValue";
 import HorizontalLine from "@/components/common/HorizontalLine";
 import cn from "classnames";
 import {Dialog} from "primereact/dialog";

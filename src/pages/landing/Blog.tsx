@@ -1,10 +1,9 @@
 import React, {useEffect, useState} from "react";
 import BigBackgroundGradient from "@/assets/images/big-background-gradient.png";
-import {Icon} from "@iconify/react";
 import DemoArticleImage from "@/assets/images/dummy/article-image.png";
-import FeaturedArticle from "@/components/FeaturedArticle";
-import BlogFilter from "@/components/common/BlogFilter";
-import ArticleCard from "@/components/ArticleCard";
+import FeaturedArticle from "./components/FeaturedArticle";
+import BlogFilter from "./components/BlogFilter";
+import ArticleCard from "./components/ArticleCard";
 
 const featuredArticles = [
     {

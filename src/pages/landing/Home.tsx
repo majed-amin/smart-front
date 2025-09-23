@@ -1,4 +1,4 @@
-import RotatingText from "@/components/RotatingText";
+import RotatingText from "./components/RotatingText";
 import {Button} from "primereact/button";
 import React from "react";
 import ProductShowcase from "@/assets/images/product-showcase.png";
@@ -8,16 +8,13 @@ import FintechNexusIcon from "@/assets/images/dummy/partners/fintech-nexus.png";
 import FinExtraIcon from "@/assets/images/dummy/partners/fixextra.png";
 import PaymentsDiveIcon from "@/assets/images/dummy/partners/payments-dive.png";
 import TcIcon from "@/assets/images/dummy/partners/tc.png";
-import FeaturesAccordion from "@/components/FeaturesAccordion";
+import FeaturesAccordion from "./components/FeaturesAccordion";
 import TutorialCardBg from "@/assets/images/tutorial-card-bg.png";
-import MetricsSection from "@/components/MetricsSection";
-import TutorialCard from "@/components/TutorialCard";
+import MetricsSection from "./components/MetricsSection";
+import TutorialCard from "./components/TutorialCard";
 import {Icon} from "@iconify/react";
-import FAQSection from "@/components/FAQSection";
-import TestimonialCard from "@/components/TestimonialCard";
-import TestimonialSection from "@/components/TestimonialSection";
-import NewsletterSubscription from "@/components/NewsletterSubscription";
-import Footer from "@/components/Footer";
+import FAQSection from "./components/FAQSection";
+import TestimonialSection from "./components/TestimonialSection";
 import {useNavigate} from "@tanstack/react-router";
 import {motion} from "framer-motion";
 

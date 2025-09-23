@@ -1,6 +1,5 @@
 import BigBackgroundGradient from "@/assets/images/big-background-gradient.png";
 import React from "react";
-import ArticleImage from "@/assets/images/dummy/article-image.png";
 
 export default function Terms() {
     return (

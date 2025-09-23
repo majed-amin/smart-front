@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
-import NewsletterSubscription from "@/components/NewsletterSubscription";
-import DownloadAppSection from "@/components/DownloadAppSection";
+import NewsletterSubscription from "./NewsletterSubscription";
+import DownloadAppSection from "./DownloadAppSection";
 import {Link, useLocation} from "@tanstack/react-router";
 
 interface FooterProps {
