@@ -1,10 +1,6 @@
 import FinancialValue from "@/components/common/FinancialValue";
 import HorizontalLine from "@/components/common/HorizontalLine";
 import cn from "classnames";
-import {Dialog} from "primereact/dialog";
-import {Button} from "primereact/button";
-import {useState} from "react";
-import {Icon} from "@iconify/react";
 
 interface PricingCardProps {
     plan: {

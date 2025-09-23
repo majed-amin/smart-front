@@ -6,7 +6,7 @@ import { Button } from "primereact/button";
 import FinancialValue from "@/components/common/FinancialValue";
 import {Checkbox} from "primereact/checkbox";
 import {Link} from "@tanstack/react-router";
-import PaymentTypeCard from "@/components/PaymentTypeCard";
+import PaymentTypeCard from "./components/PaymentTypeCard";
 import MadaIcon from "@/assets/images/payment/mada-payment.png";
 
 const paymentMethods = [
