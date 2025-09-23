@@ -3,6 +3,7 @@ import { PrimeReactProvider } from 'primereact/api';
 import {store} from "@/store";
 import {Provider} from "react-redux";
 import React from "react";
+import {ToastProvider} from "@/components/feedback/ToastProvider";
 
 function App() {
     // const [count, setCount] = useState(0);
@@ -11,7 +12,9 @@ function App() {
         <React.StrictMode>
             <Provider store={store}>
                 <PrimeReactProvider>
-                    <AppRouter/>
+                    <ToastProvider>
+                        <AppRouter/>
+                    </ToastProvider>
                 </PrimeReactProvider>
             </Provider>
         </React.StrictMode>
