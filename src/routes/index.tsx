@@ -197,8 +197,8 @@ export function AppRouter() {
             <RouterProvider router={router} />
             {process.env.NODE_ENV !== "production" && (
                 <>
-                    <TanStackRouterDevtools router={router} position="bottom-right" />
-                    <ReactQueryDevtools initialIsOpen={false} />
+                    {/*<TanStackRouterDevtools router={router} position="bottom-right" />*/}
+                    {/*<ReactQueryDevtools initialIsOpen={false} />*/}
                 </>
             )}
         </QueryClientProvider>
